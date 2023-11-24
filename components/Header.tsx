@@ -1,6 +1,7 @@
-import Logo from "./Logo";
+import { DarkModeToggle } from "./DarkModeToggle";
+import { Logo } from "./Logo";
 
-const Header = () => {
+export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-gray-900">
       <nav className="flex flex-col sm:flex-row items-center p-5 pl-2 bg-white dark:bg-gray-900 max-w-7xl mx-auto">
@@ -12,10 +13,14 @@ const Header = () => {
           {/* Session && (
 
           ) */}
+
+          <DarkModeToggle />
+
+          {/* UserButton */}
         </div>
       </nav>
+
+      {/* Upgrade Banner */}
     </header>
   );
-};
-
-export default Header;
+}

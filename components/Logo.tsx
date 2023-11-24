@@ -4,7 +4,7 @@ import Image from "next/image";
 import LogoImage from "@logos/black.svg";
 import { AspectRatio } from "./ui/aspect-ratio";
 
-const Logo = () => {
+export function Logo() {
   return (
     <Link href="/" prefetch={false} className="overflow-hidden">
       <div className="flex items-center w-72 h-14">
@@ -22,6 +22,4 @@ const Logo = () => {
       </div>
     </Link>
   );
-};
-
-export default Logo;
+}
